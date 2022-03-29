@@ -1,0 +1,17 @@
+<table>
+    <tbody>
+        <tr *ngFor="let row of profiles">
+            <mat-card class="example-card">
+                <img mat-card-image src="{{row.Image}}"
+                                    alt="click on photo to get data"
+                                    style="height: 200px;"
+                                    (click)="transferData(row)">
+                <mat-card-actions >
+                    <button mat-button (click)="increaseLikes(row)"><mat-icon>thumb_up</mat-icon> {{row.likes}}</button>
+                    <button mat-button ><mat-icon>event</mat-icon> {{row.timestamp}}</button>
+                </mat-card-actions>
+            </mat-card>
+        </tr>
+    </tbody>
+    
+</table>

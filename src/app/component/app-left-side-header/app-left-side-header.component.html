@@ -1,0 +1,13 @@
+<mat-toolbar>
+    <span>Profiles</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu" matTooltip="Filter the profiles">
+        <mat-icon class="example-icon">filter_list</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-checkbox class="example-margin"  [(ngModel)]="checked" (change)="sortLikes()">Likes</mat-checkbox>
+        </button>
+    </mat-menu>
+    
+</mat-toolbar>

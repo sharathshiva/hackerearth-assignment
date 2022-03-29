@@ -1,0 +1,8 @@
+<app-right-side-header></app-right-side-header>
+<div class="p-sm ebox">
+    <img src="{{profile?.Image}}" alt="Click on Photo" style="width: 600px; height: 300px;">
+    <mat-card-actions *ngIf="profile.likes">
+        <button mat-button (click)="increaseLikes(profile.likes)"><mat-icon>thumb_up</mat-icon>{{profile.likes}}</button>
+        <button mat-button ><mat-icon>event</mat-icon> {{profile.timestamp}}</button>
+    </mat-card-actions>
+</div>

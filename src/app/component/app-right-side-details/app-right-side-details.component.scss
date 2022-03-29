@@ -1,0 +1,13 @@
+:host {
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+
+    .ebox {
+        overflow: auto;
+        box-shadow: none;
+        border: 1px solid rgb(245,245,245);
+        margin-bottom: 25px;
+    }
+}

@@ -1,0 +1,28 @@
+:host{
+
+    as-split {
+        ::ng-deep .as-split-gutter {
+            background-color: transparent !important;
+            .as-split-gutter-icon{
+                cursor: grab;
+            }
+        }
+    }
+
+    .appplications-page-container {
+        height: 100%;
+    }
+
+    .applications-page-navigation .applications-page--content{
+        overflow-y: auto;
+    }
+
+
+}
+
+.example-icon {
+    padding: 0 14px;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
