@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'hacker-earth-assignment';
   mesage = 'Added new message variable';
+  message2 = 'Added Message2 variabe';
 }
